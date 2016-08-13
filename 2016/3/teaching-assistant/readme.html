@@ -1,0 +1,1309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)https://code.google.com/codejam/contest/3224486/dashboard -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Round 3 2016 - Google Code Jam
+  </title>
+  <link rel="stylesheet" type="text/css" href="./readme_files/base.css">
+  <link rel="stylesheet" type="text/css" href="./readme_files/dashboard.css">
+  
+  <script type="text/javascript" async="" src="./readme_files/ga.js"></script><script type="text/javascript" src="./readme_files/Dashboard_en.js"></script>
+  
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.main().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "3224486";
+      GCJ.contest.name = "Round 3 2016";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 4;
+      
+      GCJ.contest.start_int = 1465653600;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=3224486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //--></script><style></style>
+</head>
+
+<body onload="GCJ.main()">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/">
+    <img src="./readme_files/logo_image4.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Round 3 2016</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Teaching Assistant  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Forest University  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Rebel Against The Empire  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. Go++  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="">Questions asked</div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./readme_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Teaching Assistant</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">5pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>366/371 users</b> correct (99%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">10pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>343/355 users</b> correct (97%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Forest University</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">25pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>153/238 users</b> correct (64%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Rebel Against The Empire</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">8pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>294/302 users</b> correct (97%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">17pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>19/67 users</b> correct (28%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Go++</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">7pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>244/274 users</b> correct (89%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">28pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>36/74 users</b> correct (49%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./readme_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">xyz111</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">kevinsogo</td><td class="dsb-score-td" id="sbScore_1">83</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">Gennady.Korotkevich</td><td class="dsb-score-td" id="sbScore_2">83</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">apiad</td><td class="dsb-score-td" id="sbScore_3">83</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">ksun48</td><td class="dsb-score-td" id="sbScore_4">83</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">eatmore</td><td class="dsb-score-td" id="sbScore_5">83</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">yosupot</td><td class="dsb-score-td" id="sbScore_6">83</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">ffao</td><td class="dsb-score-td" id="sbScore_7">83</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">simonlindholm</td><td class="dsb-score-td" id="sbScore_8">83</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">Marcin.Smulewicz</td><td class="dsb-score-td" id="sbScore_9">83</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/3224486/scoreboard?c=3224486">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D3224486&amp;ltmpl=">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem A.</span> Teaching Assistant</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>5 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./readme_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/3224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTJkNTMxNzA2NmU1YTY0MGMyNWFkNzUwZTFkOWVkNDN8fDE0NzEwNDYzMjY4MTIwOTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5634618900348928"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./readme_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/3224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTJkNTMxNzA2NmU1YTY0MGMyNWFkNzUwZTFkOWVkNDN8fDE0NzEwNDYzMjY4MTIwOTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5634618900348928"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+You are taking a programming course which is graded using problem sets of different types.
+The course goes for a positive even number of days.
+You start the course with no problem sets.  On each day of the course, you
+<i>must</i> do <i>exactly one</i> of the following:
+</p><ul>
+<li>Request a "Coding" problem set.</li>
+<li>Request a "Jamming" problem set.</li>
+<li>Submit a problem set for grading. You must have at least one
+problem set to choose this option. If you have multiple problem sets, you
+must submit the one among those that was <i>requested most recently</i>, regardless of its type.
+</li>
+</ul>
+<p>
+All problem sets are different. There is no requirement on how many sets of
+each type must be submitted. Once you submit a set, you no longer
+have that set. Any problem sets that you have not submitted before the end
+of the course get you no points.
+</p><p>
+The problem sets are requested from and submitted to an artificially-intelligent
+teaching assistant.  Strangely, the assistant has different moods — on each
+day it is in the mood for either "Coding" or "Jamming".
+</p>
+<ul>
+<li>When you request a problem set:
+<ul>
+<li>If the requested topic matches the assistant's mood, it assigns a problem set worth a
+maximum of 10 points.</li>
+<li>If the requested topic does not match its mood, it assigns a problem set
+worth a maximum of 5 points.</li>
+</ul>
+</li>
+<li>When you submit a problem set:
+<ul>
+<li>If the topic of the submitted set matches the assistant's mood that day, it gives you the maximum number of
+points for that set.</li>
+<li>If the topic of the submitted set does not match its mood that day, it gives you 5 points fewer
+than the maximum number of points for that set.</li>
+</ul>
+</li>
+</ul>
+<p>
+For example:
+</p>
+<ul>
+<li>If you request a "Coding" problem set on a day in which the assistant is in a
+"Coding" mood, and submit it on a day in which it is in a "Jamming" mood, you
+ will earn 5 points: the problem set is worth a maximum of 10, but
+the assistant gives 5 points fewer than that.</li>
+<li>If you request a "Jamming" problem set on a day in which the assistant is in
+a "Coding" mood, and submit it on a day in which it is in a "Jamming" mood, you
+will earn 5 points: the set is worth a maximum of 5, and the assistant gives you
+the maximum number of points.</li>
+</ul>
+<p>
+Thanks to some help from a senior colleague who understands the assistant very
+well, you know what sort of mood the assistant will be in on each
+day of the course. What is the maximum total score that you will be able to
+obtain?
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>; <b>T</b>
+test cases follow. Each test case consists of one line with a string <b>S</b>
+of <code>C</code> and/or <code>J</code> characters. The i-th character of
+<b>S</b> denotes the assistant's mood on the i-th day of the course. If it is
+<code>C</code>, it is in the mood for "Coding"; if it is <code>J</code>, it is
+in the mood for "Jamming".
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing <code>Case #x: y</code>, where
+<code>x</code> is the test case number (starting from 1) and <code>y</code> is
+the maximum number of points you can obtain for that case.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+The length of <b>S</b> is even.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+2 ≤ the length of <b>S</b> ≤ 50.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+2 ≤ the length of <b>S</b> ≤ 20000.<br>
+The sum of lengths of all <b>S</b> in the dataset is at most 150000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">5
+CCJJ
+CJCJ
+CJJC
+CJJJ
+CCCCCC
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 20
+Case #2: 10
+Case #3: 20
+Case #4: 15
+Case #5: 30
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+This strategy is optimal for sample case #1:<br>
+Day 1: Request a "Coding" problem set (call it C1).<br>
+Day 2: Submit C1.<br>
+Day 3: Request a "Jamming" problem set (call it J1).<br>
+Day 4: Submit J1.<br>
+</p><p>
+The following strategy is optimal for sample cases #2, #3, and #4: request C1,
+request J1, submit J1, submit C1.
+</p><p>
+For case #2, for example, note that you could <i>not</i> request
+C1, request J1, and then submit C1. Only the most recently
+requested problem set can be submitted.
+</p><p>
+In sample case #5, you can alternate between requesting a
+"Coding" problem set on one day, and submitting it on the next day.
+</p></div></div><div id="dsb-problem-page1" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>25 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./readme_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/3224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTJkNTMxNzA2NmU1YTY0MGMyNWFkNzUwZTFkOWVkNDN8fDE0NzEwNDYzMjY4MTIwOTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5125089213284352"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+The Forest University offers its students <b>N</b> courses, which must all be
+taken to obtain the degree. The courses can only be taken one at a time - you
+must complete a course before starting another. Each course is either
+<i>basic</i>, which means one can take it without any prior knowledge, or
+<i>advanced</i>, in which case exactly one other course is its
+<i>prerequisite</i>.
+</p><p>
+A student must take the prerequisite for a course before taking the course,
+although they do not need to be taken immediately one after the other. A course
+might be the prerequisite for multiple other courses. There are no prerequisite
+cycles. Any sequence of the <b>N</b> courses that meets the rules for
+prerequisites is valid for obtaining the degree.
+</p><p>
+When you graduate, the university commemorates the sequence of courses you have
+taken by printing an abbreviated version of it on your graduation hat. More
+precisely, this abbreviated version is a string consisting of the first letter
+of the name of each course you have taken, in the order you have taken them.
+For example, if you have taken a Coding course and a Jamming course, in that
+order, your graduation hat will say <code>CJ</code>. It is considered trendy to
+have certain <i>cool words</i> as a substring of the string on one's graduation
+hat.
+</p><p>
+Consider all possible valid sequences in which the courses can be taken. For
+each cool word, you need to find the fraction of those sequences that have the
+cool word as a substring (at least once) of the string on the corresponding
+graduation hat. Note that we're interested in the fraction of possible course
+sequences, <i>not</i> the fraction of possible different graduation hat
+strings. (Since multiple courses may start with the same letter, there may be
+fewer possible strings than course sequences.)
+</p><p>
+Somewhat unusually for Code Jam, we are only looking for an approximate answer
+to this problem; pay careful attention to the output format.
+</p>
+
+<h3>Solving this problem</h3>
+<p>
+This problem has only 1 Small input and no Large input. You will be able to
+retry the input (with a time penalty).
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b>
+test cases follow. Each test case consists of five lines, in this order, which
+contain the following:
+</p>
+<ol>
+<li>the number <b>N</b> of courses.</li>
+<li><b>N</b> integers; the i-th of these integers gives the number of the
+prerequisite course for the i-th course, or 0 if the i-th course is basic. The
+courses are numbered from 1 to <b>N</b>.</li>
+<li><b>N</b> uppercase English letters (without whitespace in between), with
+the i-th character giving the first letter of the i-th course's name.</li>
+<li>the number <b>M</b> of cool words.</li>
+<li><b>M</b> cool words, each of which consists only of uppercase English
+letters.</li>
+</ol>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing
+<code>Case #x: y<sub>1</sub> y<sub>2</sub> ... y<sub><b>M</b></sub></code>,
+where <code>x</code> is the test case number (starting from 1) and
+<code>y<sub>i</sub></code> is the fraction of valid course sequences that will
+have the i-th cool word as a substring of the string on the graduation hat.
+</p><p>
+<code>y<sub>i</sub></code> will be considered correct if it is within an
+absolute error of 0.03 of the correct answer. See the
+<a href="https://code.google.com/codejam/faq.html#5-9" target="_blank">FAQ</a> for an explanation of
+what that means, and what formats of real numbers we accept.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>N</b> ≤ 100.<br>
+1 ≤ <b>M</b> ≤ 5.<br>
+The length of each cool word is between 1 and 20.<br>
+Each cool word consists of uppercase English letters only.<br>
+There are no cycles formed by the prerequisites.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">2
+2
+0 1
+CJ
+4
+CJ C D JC
+3
+0 1 0
+BAA
+3
+AA AAB ABA
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 1.0 1.0 0.0 0.0
+Case #2: 0.67 0.0 0.33
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+The sample output displays one set of acceptable answers to the sample cases.
+Other answers are possible within the allowed precision.
+</p><p>
+In sample case #1, course 1 (<code>C</code>) is a basic course that is a
+prerequisite for the advanced course 2 (<code>J</code>). The only way to
+complete the courses is to take course 1 and then course 2. This creates the
+string <code>CJ</code>. So the cool words <code>CJ</code>, <code>C</code>,
+<code>D</code>, and <code>JC</code> are present as substrings in 1, 1, 0, and 0
+out of 1 possible cases, respectively.
+</p><p>
+In sample case #2, the basic course 1 (<code>B</code>) is a prerequisite for
+the advanced course 2 (<code>A</code>), and course 3 (<code>A</code>) is
+another basic course. There are three possible ways of completing the courses:
+</p>
+<ol>
+<li>take course 1, then course 2, then course 3 (string: <code>BAA</code>)</li>
+<li>take course 1, then course 3, then course 2 (string: <code>BAA</code>)</li>
+<li>take course 3, then course 1, then course 2 (string: <code>ABA</code>)</li>
+</ol>
+<p>
+The cool words <code>AA</code>, <code>AAB</code>, and <code>ABA</code> are
+present as substrings in 2, 0, and 1 out of 3 possible cases, respectively.
+</p>
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>8 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./readme_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/3224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTJkNTMxNzA2NmU1YTY0MGMyNWFkNzUwZTFkOWVkNDN8fDE0NzEwNDYzMjY4MTIwOTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5740812302286848"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>17 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./readme_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/3224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTJkNTMxNzA2NmU1YTY0MGMyNWFkNzUwZTFkOWVkNDN8fDE0NzEwNDYzMjY4MTIwOTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5740812302286848"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+You are a rebel against the evil Galactic Empire, and you are on the run!
+</p><p>
+You have sabotaged the Empire's Factory of Evil, and imperial security
+forces will be after you soon! The factory is located on asteroid 0 in a system
+of <b>N</b> numbered asteroids. Your getaway ship, the Century Quail, is
+located on asteroid 1, and if you can get there, you will be able to fly away
+safely.
+</p><p>
+Each asteroid is a single point in space with a velocity, and you move through
+space along with whichever asteroid you are currently on. Your Asteroid Jumper
+will allow you to instantaneously jump between any two asteroids in the system.
+Long jumps are scarier than short ones (and the vacuum of space is terrifying),
+so you want to minimize the maximum distance you need to jump. However,
+starting now, if you ever spend more than a continuous <b>S</b> seconds without
+jumping, the imperial security forces will catch you. That is, the interval
+from now until your first jump, and each interval between subsequent jumps,
+must be less than or equal to <b>S</b>. You may jump at <i>any</i> instant;
+it does not have to be after an integer number of seconds have elapsed. You
+escape the instant you jump to asteroid 1.
+</p><p>
+The i-th asteroid starts at position (<b>x<sub>i</sub></b>,
+<b>y<sub>i</sub></b>, <b>z<sub>i</sub></b>) in space, and it will move a
+total distance of (<b>V<sub>xi</sub></b>, <b>V<sub>yi</sub></b>,
+<b>V<sub>zi</sub></b>) each second. This movement is continuous throughout time;
+it does not update discretely each second. (It is also possible for an
+asteroid to be stationary.) Nothing happens if asteroids occupy the same point
+in space at the same time. You can only travel between two asteroids by
+jumping, even if they happen to occupy the same point at the instant of your
+jump.
+</p><p>
+In the escape plan that minimizes the maximum jump distance, what is that
+maximum jump distance?
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b>
+test cases follow. The first line of each test case contains two integers:
+<b>N</b> (the number of asteroids) and <b>S</b> (the limit on how long you can
+go without jumping). Next, there are <b>N</b> lines describing the asteroids.
+The i-th of these lines (counting starting from 0) contains six integers: the
+initial (<b>x<sub>i</sub></b>, <b>y<sub>i</sub></b>, <b>z<sub>i</sub></b>)
+position of the i-th asteroid in space, and the distance
+(<b>V<sub>xi</sub></b>, <b>V<sub>yi</sub></b>, <b>V<sub>zi</sub></b>) it moves
+in a single second.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing <code>Case #x: y</code>, where
+<code>x</code> is the test case number (starting from 1) and <code>y</code> is
+a floating-point number: the distance of the longest jump you will have to make
+in order to get away. <code>y</code> will be considered correct if it is within
+an absolute or relative error of 10<sup>-4</sup> of the correct answer. See the
+<a href="https://code.google.com/codejam/faq.html#5-9" target="_blank">FAQ</a> for an
+explanation of what that means, and what formats of real numbers we accept.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 20.<br>
+2 ≤ <b>N</b> ≤ 1000.<br>
+1 ≤ <b>S</b> ≤ 100.<br>
+-500 ≤ <b>x<sub>i</sub></b> ≤ 500.<br>
+-500 ≤ <b>y<sub>i</sub></b> ≤ 500.<br>
+-500 ≤ <b>z<sub>i</sub></b> ≤ 500.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+<b>V<sub>xi</sub></b> = 0.<br>
+<b>V<sub>yi</sub></b> = 0.<br>
+<b>V<sub>zi</sub></b> = 0.<br>
+</p>
+
+<h4>Large dataset</h4>
+-500 ≤ <b>V<sub>xi</sub></b> ≤ 500.<br>
+-500 ≤ <b>V<sub>yi</sub></b> ≤ 500.<br>
+-500 ≤ <b>V<sub>zi</sub></b> ≤ 500.<br>
+<p>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+3 7
+0 0 0 0 0 0
+1 2 2 0 0 0
+1 1 1 0 0 0
+5 10
+0 0 0 0 0 0
+35 0 0 -1 0 0
+1 54 0 0 -2 0
+2 -150 0 0 10 0
+4 0 0 -1 0 0
+3 1
+-10 2 0 1 0 0
+0 0 10 0 0 -1
+-10 -2 0 1 0 0
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 1.7320508
+Case #2: 2.0000000
+Case #3: 4.0000000
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+Sample case #1 is the only sample case that could appear in the Small dataset.
+Any of the sample cases could appear in the Large dataset.
+</p><p>
+In sample case #1, we start on a stationary asteroid at (0, 0, 0), and our ship
+is on an asteroid at (1, 2, 2). There is another asteroid at (1, 1, 1). One
+option is to jump directly to our ship, which is a distance of 3 away. Another
+option is to jump to the other asteroid, which is a distance of sqrt(3) away,
+and then jump to the ship from there, which is a distance of sqrt(2) away. The
+maximum jump distance is 3 for the first option and sqrt(3) for the second
+option, so the second option is preferable.
+</p><p>
+Note that the value of <b>S</b> does not matter in the Small cases. Since all
+of the asteroids are stationary, there is no reason to wait around; we can make
+all jumps instantaneously.
+</p><p>
+In sample case #2, we start on a stationary asteroid at (0, 0, 0). We can wait
+there for 4 seconds for asteroid 4 to come very close, jump onto it, fly for 1
+second on it, and then jump back at time 5 back to asteroid 0 (the distance
+between the two asteroids is 1 at this moment). There we wait 10 seconds,
+cutting it very close to being caught, and then jump to the speeding asteroid 3
+at time 15. Two seconds later, asteroid 3 flies by asteroid 2, and we jump to
+asteroid 2. At time 27, we can jump from asteroid 2 to asteroid 0. There we
+patiently wait until time 35 when asteroid 1 reaches us, then we can jump onto
+it and escape.
+The longest jump we made was from asteroid 0 to asteroid 3 at time 15, and the
+distance we jumped was 2.
+</p><p>
+In sample case #3, the security forces are really active! You could, of course,
+wait one second and jump directly to asteroid 1, but a better choice - that
+allows you to make jumps no longer than 4 - is to jump back and forth between
+asteroids 0 and 2; while waiting for asteroid 1 to get close, and only then
+jump to it.
+</p>
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>7 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./readme_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/3224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTJkNTMxNzA2NmU1YTY0MGMyNWFkNzUwZTFkOWVkNDN8fDE0NzEwNDYzMjY4MTIwOTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5632366324219904"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>28 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./readme_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/3224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTJkNTMxNzA2NmU1YTY0MGMyNWFkNzUwZTFkOWVkNDN8fDE0NzEwNDYzMjY4MTIwOTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5632366324219904"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+The Go language was designed to have a simple API and to support
+multi-threading. The Code Jam team wants to push these goals to the limit, so
+we are proposing a new language called Go++.
+</p><p>
+The Go++ language uses one register, which stores one boolean value (0 or 1).
+This register is initialized to 0. The language has three instructions:
+</p><ul>
+<li><code>0</code>, which sets the register to 0.
+</li><li><code>1</code>, which sets the register to 1.
+</li><li><code>?</code>, which prints the current register value.
+</li></ul>
+Simple, right? To support multi-threading, we allow two different Go++ programs
+to run simultaneously while sharing the one register. Each instruction executes
+atomically — that is, one instruction must completely finish before the
+next instruction can start. However, the two programs may be interleaved in any
+way that preserves the relative order within each program.
+<p></p><p>
+For example, here are the only six ways in which the two programs
+<code>1?</code> and <code><u>?0</u></code> could be executed together. (The
+underline on the second program is just to distinguish its instructions from
+the instructions in the first program.)
+</p><ul>
+<li><code><u>?0</u>1?</code>, which will print <code>01</code>. (Remember that
+the register is initialized to 0.)</li>
+<li><code><u>?</u>1<u>0</u>?</code>, which will print <code>00</code>.</li>
+<li><code><u>?</u>1?<u>0</u></code>, which will print <code>01</code>.</li>
+<li><code>1<u>?0</u>?</code>, which will print <code>10</code>.</li>
+<li><code>1<u>?</u>?<u>0</u></code>, which will print <code>11</code>.</li>
+<li><code>1?<u>?0</u></code>, which will print <code>11</code>.</li>
+</ul>
+<p></p><p>
+Note that the output string always consists of <code>0</code>s and
+<code>1</code>s, and never <code>?</code>s, since <code>?</code> is not a state
+the register can be in.
+</p><p>
+Usually, programmers write programs to produce a desired output, but your task
+will be to write two programs that <i>won't</i> produce an <i>undesired</i>
+output! Specifically, you will be given a "bad" string <b>B</b> of length
+<b>L</b>, and a set <b>G</b> of <b>N</b> "good" strings, all of
+length <b>L</b>. You must produce two Go++ programs (not necessarily of the
+same length), which, when run in the way described here, could produce
+<i>all</i> of the strings in <b>G</b>, but could <i>not</i> produce the string
+<b>B</b>. It is fine if the programs could also produce other strings that are
+not <b>B</b> and not in <b>G</b>. Note that there must be a combined total of exactly <b>L</b>
+<code>?</code> instructions in the two programs. The combined number of
+instructions in the two programs must not exceed 200.
+</p><p>
+For example, for <b>B</b> = <code>11</code> and <b>G</b> = { <code>10</code>,
+<code>00</code> }, the programs <code>?</code> and <code>10?1</code> would be
+one valid answer. They can produce every string in <b>G</b>, but they cannot
+produce <b>B</b>, no matter how they are interleaved. (They can also produce
+the string <code>01</code>, which is not <b>B</b> and is not in <b>G</b>, but
+that is fine.) However, the programs <code>1?</code> and <code>?0</code> would
+not be a valid answer, since (as we saw above) they can produce <b>B</b>. The
+programs <code>00</code> and <code>??</code> would not be a valid answer, since
+they cannot produce every string in <b>G</b>.
+</p><p>
+Can you produce two programs that satisfy the conditions, or determine that the
+task is <code>IMPOSSIBLE</code>?
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b>
+test cases follow; each consists of three lines. The first line of each test
+case has two integers <b>N</b> and <b>L</b>: the number of strings in <b>G</b>,
+and the length of the <b>B</b> string and the strings in <b>G</b>. The second
+line has <b>N</b> different strings of length <b>L</b>: the strings in
+<b>G</b>. The third line has one string of length <b>L</b>: the bad string
+<b>B</b>. <b>B</b> and all of the strings in <b>G</b> are made up of only
+<code>0</code>s and/or <code>1</code>s.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing <code>Case #x: IMPOSSIBLE</code>,
+if no programs will satisfy the conditions; otherwise, output
+<code>Case #x: y z</code>, where <code>x</code> is the test case number
+(starting from 1) and <code>y</code> and <code>z</code> are your two programs
+that satisfy the conditions. The combined number of instructions in your
+programs must not exceed 200. Each program must contain at least one
+instruction. There must be a combined total of exactly <b>L</b> <code>?</code>
+instructions in the two programs. If there are multiple correct outputs, print any of them.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>N</b> ≤ 100.<br>
+1 ≤ <b>L</b> ≤ 50.<br>
+All strings in <b>G</b> are different.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+<b>B</b> consists entirely of <code>1</code>s.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+<b>B</b> may be any string consisting of <code>0</code>s and/or
+<code>1</code>s.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+2 2
+10 00
+11
+3 2
+11 10 00
+01
+4 2
+00 01 10 11
+11
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: ? 10?1
+Case #2: 1?? 0
+Case #3: IMPOSSIBLE
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+The sample output displays one set of answers to the sample cases. Other
+answers may be possible.
+</p><p>
+Sample case #1 is the one described in the problem statement.
+</p><p>
+Sample case #2 would not appear in the Small dataset.
+</p><p>
+Sample case #3 is obviously <code>IMPOSSIBLE</code> because <b>B</b> is
+in <b>G</b>.
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div"><p>
+In the last of our many online rounds, contestants faced four problems.
+<i>Teaching Assistant</i> presents a somewhat complex situation, but
+the problem has a simple greedy solution. <i>Forest University</i> poses
+the challenge of uniformly sampling tree traversals, and can be solved
+via simulation. <i>Rebel Against The Empire</i> is a 3D geometry / graph
+problem with a potentially tricky implementation. Finally, <i>Go++</i>
+is a "wild card" problem about concurrency; it has a surprisingly simple
+answer, although it is tough to see it!
+</p><p>
+52 minutes into the contest, every dataset had been solved at least once;
+contestants raced to solve the three toughest datasets (the Larges for
+B, C, and D). apiad was first to 100 points on the scoreboard at 1:50:30,
+but had C-large wrong. xyz111 had the first complete set of correct
+submissions, but with enough penalties to push the total time to
+2:42:09; nobody else registered a perfect score, though, so that record stood.
+Go++ ultimately had more correct Large attempts than Rebel (perhaps in part
+because its point value was higher), and so it turned out to be necessary to
+solve it to make the top 25, although the cutoff line was <i>very</i> close
+right up until the end.
+</p><p>
+Congratulations to everyone who made it this far and participated in
+the round. 25 contestants plus our defending champion
+(Gennady.Korotkevich) will head to New York to face off in this year's
+Finals on
+<a href="https://code.google.com/codejam/schedule.html" target="_blank">August 5</a>.
+</p>
+<hr>
+<p>
+<b>Cast</b>
+</p><p>
+Problem A (<i>Teaching Assistant</i>): Written by Devendra Agarwal.
+Prepared by Karol Pokorski.
+</p><p>
+Problem B (<i>Forest University</i>): Written and prepared by Petr
+Mitrichev.
+</p><p>
+Problem C (<i>Rebel Against The Empire</i>): Written by Onufry
+Wojtaszczyk. Prepared by Yerzhan Utkelbayev.
+</p><p>
+Problem D (<i>Go++</i>): Written by David Arthur. Prepared by Igor
+Naverniouk.
+</p>
+Solutions and other problem preparation and review by Shane Carr, John
+Dethridge, Minh Doan, Jackson Gatenby, Pablo Heiber, Andy Huang, Taman
+(Muhammed) Islam, Dominik Schmid, and Ian Tullis.
+<p></p><p>
+Analysis authors:
+</p>
+<ul>
+<li>Teaching Assistant: Saurav Keshari Aryal, Alex Meed, and Steve Thomas</li>
+<li>Forest University: John Dethridge, Petr Mitrichev, and Ian Tullis</li>
+<li>Rebel Against The Empire: Pablo Heiber, Ian Tullis, and Onufry Wojtaszczyk</li>
+<li>Go++: Alex Meed</li>
+</ul></div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><h2>Teaching Assistant: Analysis</h2>
+<p>
+Let's define N as the number of days in the test. Notice that since a student is
+not allowed to do nothing on a test day, the student must request at least N/2
+problem sets. Further, there is no reason to request more than that, since the
+extras cannot be submitted.
+</p><p>
+We'll begin with a dynamic programming solution that is sufficient for the Small
+dataset, and then discuss a mathematical formula that solves the Large dataset.
+</p>
+<h3>A dynamic programming approach</h3>
+<p>
+Because we can only submit the problem we requested most recently, we can view
+the problems that we hold as a stack, where requesting corresponds to pushing
+and submitting the most recently requested problem corresponds to popping.
+</p><p>
+Consider what happens on day 1. Clearly, we must request a problem set, and we
+now have to pick a day to submit it. Now, between the request and the
+submission, we can push to and pop from the stack, but after we are finished,
+the stack must contain the problem we requested on day 1, and nothing else.
+That means we need to have an even number of days between our request on day 1
+and the corresponding submission.
+</p><p>
+We can think of the period of time between our request and our submission as a
+subproblem, and the time after the submission as another subproblem. Each of
+those subproblems must leave the stack the way they found it, so we can use the
+same set of rules that we used above for every subproblem.
+</p><p>
+Now, we'll express how to solve the problem in terms of recursion. At each
+stage, we'll be looking at some range of days, from day i to day j. So the
+subproblem (i,j) is to find the best possible score we can get over the days
+from i to j. We'll also say we can't touch the existing entries on the stack
+(corresponding to any days before i), and must leave the stack as we found it.
+We can then solve the subproblem as we did the original problem: request a
+problem set on day i, then pick where in the (i,j) interval to submit it such
+that there's an even number of days between the request and the submission.
+</p><p>
+At this point, each of our choices divides the subproblem into two additional,
+possibly-empty subproblems. For a subproblem of length 6, for example, here are
+the ways to place the request and submission:
+</p>
+<pre><code>_ _ _ _ _ _
+↓
+R S _ _ _ _
+R _ _ S _ _
+R _ _ _ _ S</code></pre>
+<p>
+Given the pairs of request and submission days, how do we decide which type of
+problem set to request? If we request the type that doesn't match the
+assistant's mood on request day, the best score we can get is 5 points. But we
+always get at least that much by requesting the type that matches the
+assistant's mood, so we should always do that. Then, the score we get when we
+submit just depends on whether the assistant's mood on submit day matches the
+type of problem we requested: we get 10 points total if they match, and 5 if
+they don't.
+</p><p>
+The empty subproblems are the base cases of our recursion. For larger problems,
+we find, for each possible submission point, the score we get from requesting
+and submitting that problem set (10 if the assistant's mood on request day
+matches its mood on submit day, 5 otherwise), plus the optimal scores of the
+subproblems. We can use this to recursively find the solution to the original
+problem; memoizing the solutions for the subproblems yields a DP solution.
+Because the memoization table is size O(N<sup>2</sup>) and it takes O(N)
+iterations to fill each cell, this algorithm is O(N^<sup>3</sup>), which is
+sufficient to solve the Small problem.
+</p>
+<h3>A formulaic approach</h3>
+<p>
+It's also possible to solve the problem with a simple mathematical formula based
+on the input.
+</p><p>
+Count the number of even- and odd-numbered days on which the assistant is in the
+mood for Coding and Jamming. That gives us four numbers, which we'll call CE,
+CO, JE, and JO (for instance, CE is the number of even-numbered days on which
+the assistant is in the mood for Coding). We will show that the maximum possible
+score is:
+</p><p>
+S = 10 * (min(CE, CO) + min(JE, JO)) + 5 * abs(CE - CO).
+</p><p>
+We'll first show that this is an upper bound (we can't get a score higher than
+S), then show that it is tight (we can get a score equal to S).
+</p><p>
+First, note that any request/submit pair for the same problem (which we'll just
+call a pair) must have one even and one odd day; that is, for any problem set,
+it was either requested on an odd day and submitted on an even day, or vice
+versa. That must be true because we need an even number of days between the
+request and the submission. Now, since we need an even Coding day and an odd
+Coding day to make a pair where both days are Coding, the amount of those pairs
+that we can make is equal to the minimum of CE and CO. We can apply the same
+logic to Jamming. Then, we can pair up the leftovers; the amount of leftover
+pairs is the amount by which CE and CO differ (you can show that JE and JO
+differ by the same amount). No matter how we pair up the leftovers, there is no
+way to form more matched pairs.
+</p><p>
+To show that this bound is tight, we will construct a solution that achieves
+that upper bound. We make a list of the days in order. Then, whenever we see two
+adjacent days with the same mood, mark the first one as a request and the second
+as a submission, then remove those two days from our list. Observe that we can
+continue making pairs on this list, and they'll be valid on the real list (it's
+impossible for a new pair to be halfway inside and halfway outside any pair that
+we've removed, since we only remove pairs when there's nothing inside them).
+Continue this process until we can't anymore. At this point, since there aren't
+any adjacent days with the same mood, the mood must alternate between days. But
+that means that all even-numbered days have the same mood, and all odd-numbered
+days have the other mood. So we can pair all of those up, completing the proof.
+</p>
+<h3>A greedy approach</h3>
+<p>
+If you're curious, it's also possible to use a greedy stack-based algorithm to
+solve the Large problem. Our algorithm proceeds from left to right, and at each
+point decides whether to request or submit. We maintain a stack of problem sets
+that we hold, where a request is a push and a submit is a pop, then select our
+action each day as follows:
+</p><ol>
+<li>If we have no unsubmitted problem sets, request.</li>
+<li>If we've made N/2 requests thus far, where N is the number of days in the test, submit.</li>
+<li>If the top of the stack contains a problem set that matches the assistant's mood, submit.</li>
+<li>Otherwise, request.</li>
+</ol>
+<p></p><p>
+It's fairly difficult to see why this is valid on its own, but we can show that
+this also obeys the formula that we give above.
+</p><p>
+Both algorithms (the stack algorithm and the adjacent pair algorithm) find an
+adjacent pair with the same mood some number of times; we'll call these hits.
+Pairs with a different mood are misses. It remains to prove that the stack
+algorithm gets the optimal number of hits.
+</p><p>
+In most cases, both algorithms hit and miss in the same places. Intuitively,
+steps 3 and 4 of the stack algorithm correspond to finding and removing
+adjacent pairs with the same mood. Then, steps 1 and 2 clean up the remaining
+unmatched pairs.
+</p><p>
+There are some corner cases, however, where the algorithms don't precisely
+match. Take the input CJCJJC, for example: the stack algorithm produces RRRSSS,
+while the adjacent-pairs algorithm results in RRSRSS.
+</p><p>
+All of these corner cases occur when there's an unmatched pair that the stack
+algorithm doesn't match, failing to see that there's a matched pair later on at
+the same level. In other words, they all look like the following. (You can swap
+the Js and Cs, but we'll use the case that we show below without loss of
+generality.)
+</p>
+<pre><code>
+... J ... C ... J ... J ...
+</code></pre>
+<p>
+Then, the stack algorithm requests for the first two and submits for the last
+two, while the adjacent pairs algorithm matches the second pair, then the first
+pair. Notice that these have the same result either way: there's always one
+unmatched pair and one matched pair. Hence, the algorithms both produce the
+optimal score, even though they may attain it in different ways.
+</p></div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>Forest University: Analysis</h2>
+<h3>An unusual problem</h3>
+<p>
+Small-only problems are relatively rare in Code Jam. Sometimes, as with 2012's <a href="https://code.google.com/codejam/contest/1460488/dashboard#s=p0" target="_blank">Speaking in Tongues</a>, this is because there is no natural way (or compelling reason) to split the idea into two levels. In other cases, like <a href="https://code.google.com/codejam/contest/8274486/dashboard#s=p3" target="_blank">Password Security</a> from I/O 2016 and <a href="https://code.google.com/codejam/contest/2984486/dashboard#s=p2" target="_blank">Proper Shuffle</a> from Round 1A 2014, this is because we have a randomized solution in mind and want contestants to be able to try again if necessary, even if the probability of a contestant's optimal solution actually failing due to chance is very small. The Forest University problem is Small-only for both of these reasons. We could have added another Small dataset small enough to solve precisely via dynamic programming, but we didn't think it would add useful resolution to help us pick our 26 advancers.
+</p><p>
+Clearly, with up to 100 courses, there are far too many course sequences to enumerate. The problem has an unusually relaxed tolerance for less precise answers, so it is a natural candidate for a <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">simulation-based</a> approach: we can generate course schedules and check whether they contain the cool substrings. Unusually for a simulation problem, though, the challenge here is to figure out how to do the simulation correctly even once! How do we sample the set of all course sequences uniformly at random?
+</p>
+<h3>A weighted-sampling method</h3>
+<p>
+Some pen and paper analysis of a small forest can reveal a simple rule that is sufficient to guide our simulations. Let's consider a case with five courses A, B, C, D, and E; A and E are basic, A is the prerequisite of both B and D, and B is the prerequisite of C.
+</p>
+<img src="./readme_files/saved_resource"> 
+<p>
+Then there are fifteen possible orders in which to take the courses: ABCDE, ABCED, ABDCE, ABDEC, ABECD, ABEDC, ADBCE, ADBEC, ADEBC, AEBCD, AEBDC, AEDBC, EABCD, EABDC, EADBC. Notice that four-fifths of these begin with A and one-fifth begin with E. A is a root node with a total of 4 descendants (including itself); E is a root node with a total of 1 descendant (including itself). This is a promising pattern, and it is not coincidental! It suggests a method for building up a course string while sampling uniformly: keep choosing one of the available courses, with probability proportional to the size of that course's subtree (itself plus all its descendants).
+</p><p>
+To apply this method to the example above: we start with an empty course string, and at first, we can only choose either A or E. A has 4 descendants including itself, and E has 1, so we choose A with probability 4/5 and E with probability 1/5. Suppose that we choose A. Now we have three choices for the next course: B, D, and E. B has 2 descendants including itself; D has 1; E has 1. So, we choose B with probability 2/4, D with probability 1/4, and E with probability 1/4. Suppose that we choose D. Now we have two choices: B and E; we choose these with probability 2/3 and 1/3, respectively. We continue in this way until we've built a full sequence.
+</p><p>
+Why does this work? Speaking more generally: let's add a single root node to be the parent of all nodes with no prerequisites.  We can now recursively compute, for each subtree, a schedule of just the classes in that subtree. Suppose that the subtree has root node V and size S. First, we compute a schedule for each subtree whose root is one of the children of V. Then, we put V first in the new schedule we are creating, and we choose an assignment (uniformly at random) of the remaining S-1 positions to each of the subtrees, such that each subtree is assigned as many positions as it has nodes. Then, we copy the ordering for each subtree into that subtree's positions. This results in a uniformly randomly chosen schedule.
+</p><p>
+Since we are picking a uniformly random assignment for each subtree, then interleaving them together uniformly randomly, the fraction of possible orders in which a given top-level course (i.e. the root of a certain subtree) appears first can be computed using a multinomial coefficient. For example, if we have to interleave A elements from one subtree and B elements from another subtree, the total number of ways to do so is (A+B)! / (A! × B!). The number of these ways that start with an element from subtree A is (A+B-1)! / ((A-1)! × B!), and the number of these ways that start with an element from subtree B is (A+B-1)! / (A! × (B-1)!). The ratio between these is (A! × (B-1)!) / ((A-1)! × B!), and this reduces to A / B. This explains why it suffices to sample proportionately to the size of each subtree.
+</p>
+<h3>A surprisingly elegant method</h3>
+<p>
+Generating a random sequence is equivalent to assigning distinct numbers from 1 to <b>N</b> to
+nodes in our forest, in such a way that the number of a node is smaller than the number of all its descendants. Let's start with any of the <b>N</b>! possible assignments, chosen uniformly. Now let's go through nodes from top to bottom, and if a node is not the smallest in its subtree, we swap its number with the smallest. This generates sequences uniformly, since each sequence can be obtained from P different permutations, where P is the product of sizes of subtrees of all nodes. The probability that a given node X is the smallest (once it's available to be chosen) is proportional to the size of the tree it is rooting, because any of those nodes that get the smallest number will "give" it to X.
+</p>
+<h3>But will we get a precise enough answer?</h3>
+<p>
+If we check <i>K</i> uniformly generated sequences, and the true probability to find a given substring is <i>p</i>, then the fraction of those <i>K</i> sequences that contain this substring follows a binomial distribution with parameters <i>K</i>, <i>p</i>, which we can approximate with a normal distribution with mean p and standard deviation sqrt(<i>p</i> ×
+(1 - <i>p</i>) / <i>K</i>).
+(<a href="https://en.wikipedia.org/wiki/Binomial_distribution#Normal_approximation" target="_blank">This Wikipedia article</a> has some guidelines on when this approximation is valid.) If we run 10000 iterations, this is at most 0.5 / 100=5e-3, so the required precision of 3e-2 is 6 standard deviations. So, the probability of having one particular answer incorrect is roughly 1 in 500 million, which means that the probability of having at least one of the 500 required answers incorrect is at most 1 in a million.
+</p><p>
+The error bounds are generous enough that, with a fast enough implementation, the problem is solvable in slower languages such as Python.
+</p></div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><h2>Rebel Against The Empire: Analysis</h2>
+<h3>Small dataset</h3>
+<p>
+Under the Small limits, every asteroid is stationary, and so there is no incentive to wait on an asteroid for a more favorable configuration of asteroids to emerge before jumping. Time and the security forces are completely unimportant, since it is possible to complete any series of jumps instantaneously; we only need to worry about distance. Specifically, we want to find the path from asteroid 0 to asteroid 1 that minimizes the maximum jump distance.
+</p><p>
+The number of asteroids is small (<b>N</b> = 1000), so there are many viable ways to accomplish this. One is to binary search on the maximum jump distance; for any maximum distance that we want to check, we can just start at asteroid 0, traverse the graph while making jumps that are shorter than or equal to that distance, and see whether we can reach asteroid 1. Another option is to use <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm" target="_blank">Prim's algorithm</a>: we can start with just vertices (and no edges), and build up the graph by adding edges, starting with the ones with the smallest distances. The distance of the added edge that first causes asteroid 0 to be connected to asteroid 1 in some way is our answer. <a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm" target="_blank">Kruskal's algorithm</a> is another similar and complementary option. <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra's algorithm</a> can be adapted as well -- just have each node keep track of the maximum distance of any one of the jumps used to reach a node, rather than the cumulative distance to get there.
+</p>
+<h3>Large dataset</h3>
+<p>
+We can't just explore the graph (or build it up) as before, since it now matters when we make our jumps as well as where we jump to, and we may need to jump back and forth between the same pair of asteroids to throw off the security forces. We'll reuse the strategy of binary searching on jump distance; it turns out to be more convenient to work with squares of distances, so we will find the minimum squared jump distance instead. We just need a way of verifying whether a given maximum squared distance is large enough to allow an escape plan. 
+</p><p>
+Let's consider some pair of asteroids and how the squared distance between them changes as a function of time. The squared distance equals the square of the difference of the linear equations for the two asteroids; that difference is given by a quadratic equation with a positive (or zero) term before the square of time. This function (plotted on a graph of squared distance versus time) could be a parabola pointing upward or a horizontal line, depending on the relative velocities of the asteroids. If we impose a maximum squared jump distance, it corresponds to drawing a horizontal line on the graph. There may be some time range during which the squared distance between the asteroids is below that line, and so the asteroids are close enough that we can jump between them. The key observation is that because the function is a parabola pointing upward or a horizontal line, this must always be a single interval of time (which might be the universe or empty). There cannot be multiple such intervals; it will never be possible for two asteroids to get within a certain distance of each other, then move farther apart than that, then move back within that distance.
+</p><p>
+The asteroid field is a complete graph of nodes: there is an edge between every two of them. However, as we have seen, not every edge is necessarily open to us at all times; for every edge, there is some time (possibly before the problem starts) at which it opens, and some time (possibly infinity) at which it closes. Given the maximum squared jump distance that we want to check, we can calculate these intervals for every edge.
+</p><p>
+As long as we have at least one edge open from our current node, we can avoid the security forces (and keep resetting their "clock") by jumping back and forth instantaneously along that edge. However, there may be dangerous windows of time (larger than <b>S</b>) during which we cannot remain on a given node, because there will be no edges available. For each node, we can order the edges by the time at which they open, and then look for these dangerous windows. We can handle them by splitting the node into multiple unconnected nodes representing the same original node at different intervals of time; this will prevent us from remaining on a node longer than we could. Any edge from the original node must attach to exactly one of the new nodes; if it attached to more than one, there would have been no dangerous window necessitating that split-up in the first place. So this splitting of nodes does not cause the number of edges to grow, and the size of the whole graph is still O(<b>N</b><sup>2</sup>).
+</p><p>
+Then, all we have to do is run <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra's algorithm</a> on the new graph. When we arrive at a node, we can only take the outgoing edges which haven't been closed yet, and the time at which we take them is the max of the current time and the time in which they open (so that we do not travel back in time). For each node, we keep track of the earliest possible time we can get there (<i>not</i> the maximum of the jump distances needed to get there, as we did in the solution to the Small dataset; the way we have established edge opening and closing times already takes the maximum distance into account). If we can reach the destination node at all, then our candidate maximum squared jump distance is valid.
+</p></div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;"><h2>Go++: Analysis</h2>
+<p>
+To make the analysis a tiny bit easier to follow, we'll typeset strings
+(<b>B</b>, <b>G</b>, and output from the Go++ programs) in monospace font,
+instructions from the first program in normal font, and instructions from the
+second program with an underline.
+</p><p>
+First, let's try to figure out when the problem is impossible to solve. It's
+clearly impossible when <b>B</b> is in <b>G</b>; that case is even in the
+sample input. What about otherwise?
+</p><p>
+Surprisingly, <i>if </i><b>B</b><i> is not in </i><b>G</b><i>, the problem is
+always solvable</i>.
+</p><p>
+To prove this, I'll construct two Go++ programs that, when run as described in
+the problem statement, can produce <i>any</i> <b>L</b>-length string
+<i>except</i> <b>B</b>. That sounds harder than making one that just produces
+the strings in <b>G</b>, but sometimes, making the problem more difficult is a
+great way to gain the insight you need to solve the original problem. For this
+problem in particular, the set <b>G</b> is a red herring!
+</p>
+<h3>The first program</h3>
+<p>
+Given an input string <b>B</b>, construct the first program as follows:
+</p><ol>
+<li>Start with the inverse of every character of <b>B</b> (<code>0</code>
+↦ 1, <code>1</code> ↦ 0).</li>
+<li>Add a ? instruction after every 0 or 1 instruction.</li>
+</ol>
+For instance, if <b>B</b> = <code>111</code>, which could appear on the Small
+input, the first program is 0?0?0?. If <b>B</b> = <code>010</code>, which could
+only appear on the Large input, the first program is 1?0?1?.
+<p></p><p>
+Why does this work? Notice that by default, this program generates the opposite
+of <b>B</b>. In order to generate a different string, we need to override one
+or more of the ? instructions; that is, the programs need to be interleaved
+such that right before the ? from the first program, some other instruction
+from the second program changes what it prints. For instance, given the first
+program 1?0?1?, we can print <code>011</code> instead of <code>101</code> using
+the second program <u>01</u>, if it's interleaved as follows:
+1<u>0</u>?0<u>1</u>?1?. In order to print <b>B</b>, we need to override all
+three ? instructions.
+</p><p>
+So how do we prevent that from happening? We write a second program that cannot
+override all three ? instructions. Our solution differs for the Small and Large
+inputs.
+</p>
+<h3>The second program (Small)</h3>
+<p>
+For the Small input, <b>B</b> is always a string of <code>1</code>s. That means
+the first program is always 0?, repeated <b>L</b> times. For instance, if
+<b>B</b> = <code>111</code>, the first program is 0?0?0?.
+</p><p>
+Our second program needs to be able to override any two of those ?
+instructions; that way, we can print any output with up to two <code>1</code>s.
+However, we can't override all three ? instructions, since that means our
+program might print <b>B</b>. So we need a second program that contains
+<b>L</b>-1 <u>1</u>s, but not <b>L</b> <u>1</u>s. The solution to this is
+fairly simple: our second program simply consists of <u>1</u>, repeated
+<b>L</b>-1 times. For instance, if <b>B</b> = <code>111</code>, the second
+program is <u>11</u>.
+</p>
+<h3>The second program (Large)</h3>
+<p>
+To solve the problem for arbitrary <b>B</b>, we need a second program that,
+when taken as a string, has every (<b>L</b>-1)-length string as a subsequence
+(so we can print any string except <b>B</b>), but doesn't have <b>B</b> as a
+subsequence. (Here, we use "subsequence" to mean any set of elements, ordered
+as they appear in the original sequence; they need not be adjacent.) We'll
+discuss how to produce such a program shortly.
+</p><p>
+Now, with our first program and this hypothetical second program, we can
+produce any <b>L</b>-length string except <b>B</b>. That's because the second
+program has every possible subsequence of length <b>L</b>-1, so we can override
+up to <b>L</b>-1 of the ? instructions of the first program. However, we cannot
+override all <b>L</b> of them to produce <b>B</b>, because the second program
+doesn't have <b>B</b> as a subsequence.
+</p><p>
+There are many ways to generate the second program. This one won't produce the
+shortest program, but it is perhaps the easiest to explain:
+</p><ol>
+<li>Start with a copy of <b>B</b>, excluding the last character.</li>
+<li>Replace each character with a two-character sequence as follows:
+<code>0</code> ↦ <u>10</u>, <code>1</code> ↦ <u>01</u>.</li>
+</ol>
+For instance, if <b>B</b> = <code>010</code>, the second program is
+<u>1001</u>. The first <code>0</code> becomes <u>10</u>, the <code>1</code>
+becomes <u>01</u>, and we ignore the last character of <b>B</b>.
+<p></p><p>
+We outlined the two requirements above for the second program to be valid:
+</p><ul>
+<li>The second program must have every (<b>L</b>-1)-length string as a
+subsequence.</li>
+<li>The second program must not contain <b>B</b> as a subsequence.</li>
+</ul>
+Now, we will show that the steps above give us a second program that satisfies
+these requirements.
+<p></p><p>
+To get any (<b>L</b>-1)-length subsequence, split the second program into pairs
+of adjacent instructions. Each pair contains a 0 and a 1, since that's how we
+built the program. So we just pick one character from each pair, and we have
+any (<b>L</b>-1)-length string!
+</p><p>
+Now, let's try to get <b>B</b> as a subsequence of our second program. Say
+<b>B</b> = <code>010</code> and the second program is <u>1001</u>. In order to
+get 010 as a subsequence, we start from finding the first 0 in <u>1001</u>,
+which occurs at the second character. Next we find the first 1 after that,
+which is the fourth character. The pattern continues: because of how we've
+built the second program, we always go through two characters whenever we try
+to find <b>B</b> as a subsequence. And because the second program only has
+2<b>L</b>-2 characters, we can't find all of <b>B</b> as a subsequence.
+Therefore, our second program is valid.
+</p></div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: none;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);" lpformnum="1"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="NDU4NTNlNzQ1ZWY0OTU5ZDMwOGMyN2EwOTYxNjZlOWZ8fDE0NzEwNDYzMjUyOTg5NDA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5634618900348928">A. Teaching Assistant</option><option value="5125089213284352">B. Forest University</option><option value="5740812302286848">C. Rebel Against The Empire</option><option value="5632366324219904">D. Go++</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2015 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/terms.html">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img src="./readme_files/gcp_gray_small.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>
