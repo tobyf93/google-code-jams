@@ -1,6 +1,10 @@
 const fs = require('fs');
 
-const forEachCase = (inputPath, callback) => {
+module.exports = {
+  forEachCase
+};
+
+function forEachCase(inputPath, callback) {
   const input = fs.readFileSync(inputPath).toString();
   const lines = input.split('\n');
   const numberOfCases = lines[0];
@@ -13,5 +17,3 @@ const forEachCase = (inputPath, callback) => {
     console.log(`Case #${caseIndex + 1}: ${output}`);
   }
 }
-
-module.exports = forEachCase;
