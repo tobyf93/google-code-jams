@@ -22,6 +22,8 @@
     return newBoard;
   };
 
+  // Used for a gravity effect.  Will cause all counters to fall to the left-hand
+  // side.
   const removeEmpties = (board) => {
     return board.map((row) => {
       return row.reduce((prev, curr) => {
