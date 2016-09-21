@@ -7,45 +7,26 @@
     return boardStrings.map((boardString) => boardString.split(''));
   };
 
-  // Rotate board clockwise
-  // Go through each row and unshift the nth item to the nth row in the new board
+  // Not REALLY a rotate, just changing which way is down by shifting counters
+  // to the right.
   const rotateBoard = (board) => {
-    let newBoard = [];
-
     board.forEach((row) => {
-      row.forEach((counter, i) => {
-        newBoard[i] = newBoard[i] || [];
-        newBoard[i].unshift(counter);
-      });
-    });
+      for (let i = 0; i < row.length; i++) {
+        let counter = row[i];
 
-    return newBoard;
-  };
-
-  // Used for a gravity effect.  Will cause all counters to fall to the left-hand
-  // side.
-  const removeEmpties = (board) => {
-    return board.map((row) => {
-      return row.reduce((prev, curr) => {
-        if (curr != '.') {
-          prev.push(curr);
-          return prev;
+        // Place all empty cells at front
+        if (counter === '.') {
+          row.unshift(row.splice(i, 1)[0]);
         }
-
-        return prev;
-      }, []);
+      }
     });
+
+    return board;
   };
 
   forEachCase(input, (boardStrings, winningNumber) => {
     let board = buildBoard(boardStrings);
-
-    buildBoard(boardStrings);
-
-    // Rotate twice, using left side as bottom
-    board = rotateBoard(rotateBoard(board));
-    console.log(board);
-    board = removeEmpties(board);
+    board = rotateBoard(board);
     console.log(board);
   });
 })();
