@@ -31,8 +31,11 @@
     let blueRegex = new RegExp(`B{${inARow}}`);
 
     if (string.match(redRegex)) {
+      console.log('red');
       win.red = true;
-    } else if (string.match(blueRegex)) {
+    }
+    if (string.match(blueRegex)) {
+      console.log('blue');
       win.blue = true;
     }
   }
