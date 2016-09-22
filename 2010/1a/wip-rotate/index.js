@@ -1,5 +1,6 @@
 (function() {
   const { forEachCase } = require('./helpers.js');
+  const _ = require('lodash');
   const input = process.argv[2];
 
   // Build board from string representation
@@ -58,11 +59,33 @@
   };
 
   const diagonalLeftString = (board, i, j) => {
+    let string = '';
 
+    while (_.get(board, `[${i}][${j}]`) != undefined) {
+      string += board[i][j];
+      i++;
+      j--;
+    }
+
+    return string;
   };
 
   const diagonalRightString = (board, i, j) => {
+    let string = '';
 
+    while (true) {
+      if (board[i] === undefined) {
+        break;
+      } else if (board[i][j] === undefined) {
+        break;
+      }
+
+      string += board[i][j];
+      i++;
+      j++;
+    }
+
+    return string;
   };
 
   // For every element check for wins diagonal left/right by stepping down the
@@ -70,10 +93,10 @@
   const checkDiagonals = (board, inARow, win) => {
     board.forEach((row, i) => {
       row.forEach((column, j) => {
-        let diagonalLeftString = diagonalLeftString(board, i, j);
-        let diagonalRightString = diagonalRightString(board, i, j);
-        checkRegex(diagonalLeftString, inARow, win);
-        checkRegex(diagonalRightString, inARow, win);
+        let string = diagonalLeftString(board, i, j);
+        checkRegex(string, inARow, win);
+        string = diagonalRightString(board, i, j);
+        checkRegex(string, inARow, win);
       });
     });
   };
@@ -86,19 +109,18 @@
     let board = buildBoard(boardStrings);
 
     board = rotateBoard(board);
-    console.log(board);
-    // checkHorizontal(board, inARow, win);
-    // checkVertical(board, inARow, win);
+    checkHorizontal(board, inARow, win);
+    checkVertical(board, inARow, win);
     checkDiagonals(board, inARow, win);
 
     if (win.red && win.blue) {
-      return 'BOTH';
+      return 'Both';
     } else if (win.red) {
-      return 'RED';
+      return 'Red';
     } else if (win.blue) {
-      return 'BLUE';
+      return 'Blue';
     } else {
-      return 'NEITHER';
+      return 'Neither';
     }
   });
 })();
