@@ -24,9 +24,58 @@
     return board;
   };
 
-  forEachCase(input, (boardStrings, winningNumber) => {
+  const checkRegex = (string, inARow, win) => {
+    let redRegex = new RegExp(`R{${inARow}}`);
+    let blueRegex = new RegExp(`B{${inARow}}`);
+
+    if (string.match(redRegex)) {
+      win.red = true;
+    } else if (string.match(blueRegex)) {
+      win.blue = true;
+    }
+  }
+
+  const checkHorizontal = (board, inARow, win) => {
+    board.forEach((row) => {
+      const rowString = row.join('');
+      checkRegex(rowString, inARow, win);
+    });
+  };
+
+  const checkVertical = (board, inARow, win) => {
+    let length = board[0].length;
+
+    for (let i = 0; i < length; i++) {
+      let columnString = '';
+
+      board.forEach((row) => {
+        columnString += row[i];
+      });
+
+      checkRegex(columnString, inARow, win);
+    }
+  };
+
+  forEachCase(input, (boardStrings, inARow) => {
+    let win = {
+      red: false,
+      blue: false
+    };
     let board = buildBoard(boardStrings);
+
     board = rotateBoard(board);
     console.log(board);
+    checkHorizontal(board, inARow, win);
+    checkVertical(board, inARow, win);
+
+    if (win.red && win.blue) {
+      return 'BOTH';
+    } else if (win.red) {
+      return 'RED';
+    } else if (win.blue) {
+      return 'BLUE';
+    } else {
+      return 'NEITHER';
+    }
   });
 })();
