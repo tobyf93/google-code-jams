@@ -12,10 +12,10 @@
   const rotateBoard = (board) => {
     board.forEach((row) => {
       for (let i = 0; i < row.length; i++) {
-        let counter = row[i];
+        let column = row[i];
 
         // Place all empty cells at front
-        if (counter === '.') {
+        if (column === '.') {
           row.unshift(row.splice(i, 1)[0]);
         }
       }
@@ -24,6 +24,7 @@
     return board;
   };
 
+  // For checking the string representations of rows, columns and diagonals
   const checkRegex = (string, inARow, win) => {
     let redRegex = new RegExp(`R{${inARow}}`);
     let blueRegex = new RegExp(`B{${inARow}}`);
@@ -56,6 +57,27 @@
     }
   };
 
+  const diagonalLeftString = (board, i, j) => {
+
+  };
+
+  const diagonalRightString = (board, i, j) => {
+
+  };
+
+  // For every element check for wins diagonal left/right by stepping down the
+  // board.
+  const checkDiagonals = (board, inARow, win) => {
+    board.forEach((row, i) => {
+      row.forEach((column, j) => {
+        let diagonalLeftString = diagonalLeftString(board, i, j);
+        let diagonalRightString = diagonalRightString(board, i, j);
+        checkRegex(diagonalLeftString, inARow, win);
+        checkRegex(diagonalRightString, inARow, win);
+      });
+    });
+  };
+
   forEachCase(input, (boardStrings, inARow) => {
     let win = {
       red: false,
@@ -65,8 +87,9 @@
 
     board = rotateBoard(board);
     console.log(board);
-    checkHorizontal(board, inARow, win);
-    checkVertical(board, inARow, win);
+    // checkHorizontal(board, inARow, win);
+    // checkVertical(board, inARow, win);
+    checkDiagonals(board, inARow, win);
 
     if (win.red && win.blue) {
       return 'BOTH';
